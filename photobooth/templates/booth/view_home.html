@@ -1,0 +1,89 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Header ======= -->
+
+  {% include 'booth/header.html' %}
+<!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->  
+    <link rel="stylesheet" href="{% static 'assets/css/css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/css/swiper.css' %}" />
+
+
+       <!-- Gallery Section -->
+       <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-content">
+              
+                <div class="gallery-container">
+                   
+                    <!-- Gallery -->
+                    <div class="galleries">
+                        <!-- Wedding Gallery -->
+                        <div class="gallery active" data-name="wedding">
+                            <div>
+
+                                {% for photo in photos %}
+
+
+                              <a data-fslightbox="wedding" href="{{photo.image.url}}"
+                              class="gallery-item">
+                              <img src="{{photo.image.url}}">
+                              </a>
+                        
+                          {% empty %}
+                          <h3>No photos...</h3>
+                          {% endfor %}
+
+                              
+                         
+                          
+                  
+                             
+                         
+
+                             
+                            
+                              
+                           
+                               
+
+                               
+                            </div>
+                         
+                        </div>
+                        
+                  
+
+                  
+                  
+                    
+
+                    </div>
+                    <!-- Gallery  End -->
+                </div>
+            </div>
+        </div>
+       </section>
+    <!-- Gallery Section End -->
+
+
+
+    <script src="{% static 'assets/js/swiper.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/fslightbox.js' %}"></script>
+
+  </main><!-- End #main -->
+  {% include 'booth/chatbox.html' %}
+
+   {% include 'booth/footer.html' %}
+  <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'booth/header.html' %}
+
+
+<!-- your_template_for_delete_confirmation.html -->
+<br><br><br><br>
+
+          <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+             <div class="container">
+                <form method="post" action="{% url 'delete_photo' photo.id %}">
+                  {% csrf_token %}
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Delete Photo</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <p>Are you sure you want to delete the photo?</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Delete</button>
+                          </div>
+                      </div>
+                  </div>
+                </form>
+             </div>
+         
+
+
+{% include 'booth/footer.html' %}
+<!-- ======= Footer ======= -->
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

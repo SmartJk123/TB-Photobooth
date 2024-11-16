@@ -1,0 +1,43 @@
+
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between position-relative">
+
+    <div class="logo">
+      <h1 class="text-light"><a href="{% url 'home' %}"><span>TuneBox</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        
+        <li><a class="nav-link scrollto " href="{% url 'home' %}">Home</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'about' %}">About Us</a></li>
+        <!-- <li><a class="nav-link scrollto" href="{% url 'services' %}">Services</a></li> -->
+        <li><a class="nav-link scrollto" href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'home' %}#contact"  ref="#contact">Contact</a></li>
+        <li> <a href="{% url 'appointment' %}" class="btn1">Book</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+
+     {% endif %}      
+     
+      </ul>
+
+      {% comment %} <i class="bi bi-list mobile-nav-toggle">
+        <ul class="social-icons">
+            <li><a href="#" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </i> {% endcomment %}
+      
+    </nav><!-- .navbar -->
+
+  </div>
+</header>
+<!-- End Header -->
+
+

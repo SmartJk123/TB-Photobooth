@@ -1,0 +1,188 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Header ======= -->
+
+  {% include 'booth/header.html' %}
+<!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->  
+    <link rel="stylesheet" href="{% static 'assets/css/css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/css/swiper.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'assets/css/css/style_blog.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/photo/css/style.css' %}" type="text/css"> 
+
+
+
+<br><br><br>
+
+ <!-- Frame Section  -->
+ <div class="frame">
+	<div class="text">
+		<span>❤</span>
+		<span></span>
+		<span>E</span>
+		<span>V</span>
+		<span>O</span>
+		<span>L</span>
+		<span></span>
+		<span>H</span>
+		<span>T</span>
+		<span>I</span>
+		<span>W</span>
+		<span></span>
+		<span>E</span>
+		<span>D</span>
+		<span>A</span>
+		<span>M</span>
+		<span></span>
+		<span>❤</span>
+		<span></span>
+		<span>E</span>
+		<span>V</span>
+		<span>O</span>
+		<span>L</span>
+		<span></span>
+		<span>H</span>
+		<span>T</span>
+		<span>I</span>
+		<span>W</span>
+		<span></span>
+		<span>E</span>
+		<span>D</span>
+		<span>A</span>
+		<span>M</span>
+		<span></span>
+		<span>❤</span>
+		<span></span>
+		<span>E</span>
+		<span>V</span>
+		<span>O</span>
+		<span>L</span>
+		<span></span>
+		<span>H</span>
+		<span>T</span>
+		<span>I</span>
+		<span>W</span>
+		<span></span>
+		<span>E</span>
+		<span>D</span>
+		<span>A</span>
+		<span>M</span>
+
+	</div>
+</div>
+</div>
+ <!-- End Frame Section  -->
+
+ <!-- Portfolio Section Begin -->
+
+   
+ <section class="portfolio spad">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <ul class="portfolio__filter">
+                  <li class="active" data-filter="*">All</li>
+                  <li data-filter=".branding">Branding</li>
+                  <li data-filter=".digital-marketing">Digital marketing</li>
+                  <li data-filter=".web">Templates</li>
+                  <li data-filter=".photography">Photography</li>
+                  <li data-filter=" .ecommerce">Framing</li>
+              </ul>
+          </div>
+      </div>
+      <div class="gallery-container">
+                   
+        <!-- Gallery -->
+        <div class="galleries">
+            <!-- Wedding Gallery -->
+            <div class="gallery active" data-name="Branding">
+                <div>
+                    <a data-fslightbox="Templates" href="./assets/images/templet/1.png"
+                    class="gallery-item">
+                  <img src="{% static 'assets/images/templet/1.png' %}">
+              </a>
+                  
+                  <a data-fslightbox="Branding" href="{% static 'assets/images/templet/1.png' %}"
+                  class="gallery-item">
+                  <img src="{% static 'assets/images/templet/1.png' %}"
+                      alt="Wedding photobooth rental" />
+              </a>
+              
+          <a data-fslightbox="wedding" href="{% static 'assets/images/templet/2.png' %}"
+          class="gallery-item">
+          <img src="{% static 'assets/images/templet/2.png' %}" alt="Wedding" />
+          </a>
+                 
+              <a data-fslightbox="wedding" href="{% static 'assets/images/templet/3.png' %}" class="gallery-item">
+                 <img src="{% static 'assets/images/templet/3.png' %}" alt="Wedding photobooth rental" />
+              </a>
+
+                    <a data-fslightbox="wedding" href="{% static 'assets/images/templet/4.png' %}"
+                        class="gallery-item">
+                        <img src="{% static 'assets/images/templet/4.png' %}"
+                            alt="Wedding photobooth rental" />
+                    </a>
+                    <a data-fslightbox="wedding" href="{% static 'assets/images/templet/5.png' %}"
+                    class="gallery-item">
+                    <img src="{% static 'assets/images/templet/5.png' %}" alt="Wedding" />
+                </a>
+                    <a data-fslightbox="wedding" href="{% static 'assets/images/templet/6.png' %}"
+                        class="gallery-item">
+                        <img src="{% static 'assets/images/templet/6.png' %}" alt="Wedding" />
+                    </a>
+                    <a data-fslightbox="wedding" href="{% static 'assets/images/templet/templ.jpg' %}"
+                    class="gallery-item">
+                    <img src="{% static 'assets/images/templet/templ.jpg' %}" alt="Wedding" />
+                </a>
+                   
+                </div>
+                <a href="{% url 'view_home' %}" target="_blank" class="btn1">View
+                    More</a>
+            </div>
+            
+                                </div>
+                                <!-- Gallery  End -->
+                          
+            
+</div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="pagination__option">
+                  <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
+                  <a href="#" class="number__pagination">1</a>
+                  <a href="#" class="number__pagination">2</a>
+                  <a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Portfolio Section End -->
+
+
+
+<script src="{% static 'assets/photo/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/mixitup.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/masonry.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'assets/photo/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/photo/js/main.js' %}"></script>
+
+</main><!-- End #main -->
+{% include 'booth/chatbox.html' %}
+
+{% include 'booth/footer.html' %}
+<!-- ======= Footer ======= -->
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

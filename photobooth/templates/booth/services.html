@@ -1,0 +1,74 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'booth/header.html' %}
+
+ <!-- ======= Services Section ======= -->
+      <section id="services" class="services mt-5">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Services</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
+              <img src="{% static 'assets/img/services.jpeg' %}" alt="" width='400px'>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch ">
+              <div class="icon-box" data-aos="fade-up">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Rental Services</a></h4>
+                <p class="description">Renting at weddings, birthdays and events             Explore the exciting world of our photo-booth services and discover how we can make your events truly memorable. Whether it's a wedding, a corporate gathering, or a fun party, our photo-booths are the perfect addition to capture the moments and create lasting memories. 
+                  Tune-Box is a Photo Booth company launched on November in Nairobi. We use a powerful software to take our photos and print 6 Polaroid photos. We provide a backdrop & props according to favorable theme and aesthetic of the event at affordable prices.    </p>
+               <br><br>
+                  <div class="text-center mb-5">
+                  <button type="button" class="btn btn-secondary rounded-pill">Book</button>
+
+                </div>
+              </div>
+      
+            </div>
+            
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch ">
+              <div class="icon-box" data-aos="fade-up">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Vending Services</a></h4>
+                <p class="description">Vending at events Renting at weddings, birthdays and events             Explore the exciting world of our photo-booth services and discover how we can make your events truly memorable. Whether it's a wedding, a corporate gathering, or a fun party, our photo-booths are the perfect addition to capture the moments and create lasting memories. 
+                  Tune-Box is a Photo Booth company launched on November in Nairobi. We use a powerful software to take our photos and print 6 Polaroid photos. We provide a backdrop & props according to favorable theme and aesthetic of the event at affordable prices.    </p>
+               </p>
+               <br><br>
+                <div class="text-center mb-5">
+                  <button type="button" class="btn btn-secondary rounded-pill">Book </button>
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">Vending Services</a></h4>
+                <p class="description">Vending at events</p>
+              </div>
+            </div>     -->
+
+          </div>
+
+        </div>
+      </section><!-- End Services Section -->
+
+{% include 'booth/footer.html' %}
+<!-- ======= Footer ======= -->
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

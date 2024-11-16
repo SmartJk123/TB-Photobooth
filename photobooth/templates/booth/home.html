@@ -1,0 +1,714 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Header ======= -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->  
+  <link rel="stylesheet" href="{% static 'assets/css/css/reset.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/css/swiper.css' %}" />
+
+
+
+ 
+    <main>
+      {% include 'booth/header.html' %}
+
+
+    {% include 'booth/hero.html' %}
+    
+   
+
+  <div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <!-- <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>  -->
+    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+  
+  </div>
+ 
+  
+  <!-- </section> -->
+  <!-- End Hero -->
+
+ 
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div data-aos="fade-up">
+            <div class="text-center">
+              <h2 class="">Welcome to TuneBox photo-booth</h2>
+                  <h4><i> 
+                    <p>
+                    Welcome to TuneBox, where we believe every moment is worth capturing and cherishing for a lifetime. We are more than just a photo-booth company; we are memory-makers and joy-crafters at weddings, corporate events, birthday parties, and special occasions.
+                  </p>
+                <p> With our sleek designs, customizable prints, and a wide array of props, backdrops, and themes, we transform every snapshot into a masterpiece. But what truly sets us apart is our exceptional service, leaving every guest feeling like a star. Our team guides them through the photo-booth experience with enthusiasm and warmth, ensuring unforgettable memories are made.
+               </p>
+                  
+           </div>
+          </div>
+   
+        </div>
+
+      </div>
+    </section> 
+
+
+       <!-- ======= Testimonials Section ======= -->
+       <section id="testimonials" class="testimonials">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Service Packages</h2>
+          </div>
+
+          <!-- <div id="services" class="services"> -->
+       
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper-wrapper">
+            
+      
+            <!-- End testimonial item -->
+
+              <div class="swiper-slide p-3">
+                <!-- Card -->
+                    <div class="card ">
+                      <!-- Card image -->
+                      <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo9.webp" alt="Card image cap">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                              <!-- Title -->
+                              <h4 class="card-title">SnapSix Package </h4>
+                              <hr>
+                              <!-- Text -->
+                              <p class="card-text">                  
+                                <p class="description">Unleash joy with 2 polaroid strips of 3 photos each. This package is applicable for events and concerts where you get to pay for transport and all your guests pay for their individual photos @300. 
+                              </p>
+                          <button class="btn btn-indigo btn-rounded btn-md">
+                          <a href="https://www.instagram.com/tunebox254?igsh=MTBuaDlscnV4bTUyMw%3D%3D&utm_source=qr">Book </button></a>
+
+                      </div>
+                    </div>
+
+                </div>
+              
+             
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide p-3">
+                <div class="card">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo9.webp" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                          </a>
+                        </div>
+
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                          <!-- Title -->
+                          <h4 class="card-title">Full-Day Package</h4>
+                          <hr>
+                          <!-- Text -->
+                            <p class="description">This package is a complimentary of the hourglass package.Additionally the operation time will be 8 hours+. Book now for a day packed with laughter and memories captured. 
+                          
+                      <button class="btn btn-indigo btn-rounded btn-md">
+                      <a href="https://www.instagram.com/tunebox254?igsh=MTBuaDlscnV4bTUyMw%3D%3D&utm_source=qr">Book </button></a>
+
+                  </div>
+                </div>
+         
+              </div>
+              
+              <!-- End testimonial item -->
+            </div>
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          <!-- </div> -->
+          
+  
+       
+      </section>
+      <!-- End Testimonials Section -->
+  
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <a class="cta-btn" href="#">Living in Polaroids</a>
+
+          <p> Photography is the alchemy of freezing fleeting moments into eternal beauty.
+            What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce. - "Karl Lagerfeld"
+          </p>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+ 
+
+       <!-- Gallery Section -->
+       <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-content">
+                <h2 class="gradient">
+                    Portfolio
+                </h2>
+                <div class="gallery-container">
+                   
+                    <!-- Gallery -->
+                    <div class="galleries">
+                        <!-- Wedding Gallery -->
+                        <div class="gallery active" data-name="wedding">
+                            <div>
+                              <a data-fslightbox="wedding" href="{% static 'assets/images/background.jpg' %}"
+                              class="gallery-item">
+                              <img src="{% static 'assets/images/background.jpg' %}">
+                          </a>
+                              
+                              <a data-fslightbox="wedding" href="{% static 'assets/images/webp/till d.jpeg' %}"
+                              class="gallery-item">
+                              <img src="{% static 'assets/images/webp/till d.jpeg' %}"
+                                  alt="Wedding photobooth rental" />
+                          </a>
+                          
+                      <a data-fslightbox="wedding" href="{% static 'assets/images/events/image14.jpg' %}"
+                      class="gallery-item">
+                      <img src="{% static 'assets/images/events/image14.jpg' %}" alt="Wedding" />
+                      </a>
+                             
+                          <a data-fslightbox="wedding" href="{% static 'assets/images/webp/small pics.jpg' %}" class="gallery-item">
+                             <img src="{% static 'assets/images/webp/small pics.jpg' %}" alt="Wedding photobooth rental" />
+                          </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/webp/ind photo.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/webp/ind photo.jpg' %}"
+                                        alt="Wedding photobooth rental" />
+                                </a>
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/webp/prints.jpg' %}"
+                                class="gallery-item">
+                                <img src="{% static 'assets/images/webp/prints.jpg' %}" alt="Wedding" />
+                            </a>
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/webp/props.jpeg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/webp/props.jpeg' %}" alt="Wedding" />
+                                </a>
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/webp/das.jpeg' %}"
+                                class="gallery-item">
+                                <img src="{% static 'assets/images/webp/das.jpeg' %}" alt="Wedding" />
+                            </a>
+                               
+
+                               
+                            </div>
+                            <a href="{% url 'view_home' %}" target="_blank" class="btn1">View
+                                More</a>
+                        </div>
+                        <!-- Wedding Gallery End -->
+                        
+                        <!-- Company Gallery -->
+                        <div class="gallery" data-name="other">
+                            <div>
+                              <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image3.PNG' %}"
+                                  class="gallery-item">
+                                  <img src="{% static 'assets/images/weddings/image3.PNG' %}"
+                                      alt="Wedding photobooth rental" />
+                              </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image3.PNG' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/image3.PNG' %}"
+                                        alt="Wedding photobooth rental" />
+                                </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image9.jpg' %}"
+                                class="gallery-item">
+                                <img src="{% static 'assets/images/weddings/image9.jpg' %}" alt="Wedding" />
+                            </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image7.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/image5.jpg' %}"
+                                        alt="Wedding photobooth rental" />
+                                </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image6.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/image6.jpg' %}"
+                                        alt="Wedding photobooth rental" />
+                                </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image8.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/image8.jpg' %}" alt="Wedding" />
+                                </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/image9.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/image9.jpg' %}" alt="Wedding" />
+                                </a>
+
+                                <a data-fslightbox="wedding" href="{% static 'assets/images/weddings/habi.jpg' %}"
+                                    class="gallery-item">
+                                    <img src="{% static 'assets/images/weddings/habi.jpg' %}" alt="Wedding" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Birthday Gallery -->
+                        <div class="gallery" data-name="birthday">
+                            <div>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/1.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/1.png"
+                                        alt="Birthday photobooth rental" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/2.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/2.png"
+                                        alt="Birthday photobooth rental" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/3.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/3.png" alt="Birthday" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/4.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/4.png" alt="Birthday" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/5.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/5.png" alt="Birthday" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/6.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/6.png" alt="Birthday" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/7.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/7.png" alt="Birthday" />
+                                </a>
+                                <a data-fslightbox="birthday" href="./assets/images/gallery/birthday/8.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/birthday/8.png" alt="Birthday" />
+                                </a>
+                            </div>
+                            <!-- <a href="#" class="btn">Birthday</a> -->
+                        </div>
+                        <!-- Graduation Gallery -->
+                        <div class="gallery" data-name="graduation">
+                            <div>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/1.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/1.png"
+                                        alt="Graduation photobooth rental" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/2.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/2.png"
+                                        alt="Graduation photobooth rental" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/3.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/3.png" alt="Graduation" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/4.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/4.png" alt="Graduation" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/5.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/5.png" alt="Graduation" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/6.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/6.png" alt="Graduation" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/7.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/7.png" alt="Graduation" />
+                                </a>
+                                <a data-fslightbox="graduation" href="./assets/images/gallery/graduation/8.png"
+                                    class="gallery-item">
+                                    <img src="./assets/images/gallery/graduation/8.png" alt="Graduation" />
+                                </a>
+                            </div>
+                            <!-- <a href="#" class="btn">Social</a> -->
+                        </div>
+
+                    </div>
+                    <!-- Gallery  End -->
+                </div>
+            </div>
+        </div>
+       </section>
+    <!-- Gallery Section End -->
+    
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Empress Almaa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>
+                  I had a great time thanks to tunebox.Your photos were perfect and so was your service.We loved you. 
+                  
+                <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6304.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4> -->
+              </div>
+            </div>
+            <!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  BlanketsandWine
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>Thank you so much for coming out and making #BlanketsandWine a complete vibe!!! <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6304.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Sara Wilsson</h3>
+                <h4>Designer</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  UON Prom
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>I just want to pass a thank you from our committee chair and team.I wish you guys all the best. <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6304.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Sara Wilsson</h3>
+                <h4>Designer</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Marie Achola.
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>Thank you so much. I'm extremely happy with your services and patience.You guys are the best! <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6304.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Sara Wilsson</h3>
+                <h4>Designer</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Faraxsan Savior
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>You guys were really sweet and you guys kept me company when i was tired in the wedding. Thank you <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6305.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 TheGoodTheBad
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>Thank you for supporting our event. We appreciate it <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6307.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4> -->
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Ashley Nderitu
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h5><p>Your photos were perfect and so was your service. We loved you <h5>
+
+                <!-- <img src="{% static 'assets/img/IMG_6308.PNG' %}" class="testimonial-img" alt=""> -->
+                <!-- <h3>John Larson</h3>
+                <h4>Entrepreneur</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+    
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+              <div class="container-fluid px-1 py-5 mx-auto">
+                  <div class="row d-flex justify-content-center">
+                      <div class="section-title">
+                          <h2>Book with us.
+                        </h2>
+                        <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-4">
+                            <img src="{% static 'assets/images/webp/tunebox.PNG' %}" width="60%" srcset="">   
+                          </div>
+                          <div class="col-4"></div>
+                        </div>
+                        <br>
+                      
+                        </div>
+                        
+                          <div class="row">
+
+                              <div class="col-lg-12">
+                                {% if messages %}
+                                <div class="card notification-card notification-invitation">
+                                    <div class="card-body">
+                                    {% for message in messages %}
+                                            <div class="card-title">{{message}} </div>
+                                        {% endfor %}
+                                    </div>
+                                  </div> 
+                                {% endif %}
+                                
+
+                              
+                              <form class="form-card" method="POST" action="{% url 'appointment' %}">
+                              {% csrf_token %}
+                                  <div class="row">
+
+                                      <div class="col-md-6 form-group mt-3 mt-md-2"> 
+                                      
+                                      <input required type="text" id="fname" name="fname" class="form-control" placeholder="Enter your first name" onblur="validate(1)"> 
+                                    </div>
+
+                                  <div class="col-md-6 form-group mt-3 mt-md-2"> 
+                                      <input required type="text" id="lname" name="lname" class="form-control" placeholder="Enter your last name" onblur="validate(2)"> 
+                                  </div>
+
+                                  </div>
+
+                                  <div class="row justify-content-between text-left">
+
+                                      <div class="col-md-6 form-group mt-3 mt-md-2"> 
+                                          <label class="form-control-label px-3">Email<span class="text-danger"> *</span>
+                                          </label> 
+                                          <input type="text" id="email" name="email" class="form-control" placeholder="" onblur="validate(3)"> 
+                                      </div>
+
+                                      <div class="col-md-6 form-group mt-3 mt-md-2"> 
+                                      <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> 
+                                        <input type="text" id="mob" name="mobile" class="form-control" placeholder="" onblur="validate(4)"> 
+                                      </div>
+
+                                      <div class="col-md-12 form-group mt-3 mt-md-2"> 
+                                          <label class="form-control-label px-3">Select Date<span class="text-danger"> *</span></label> 
+                                          <input type="date" id="select_date" name="select_date" class="form-control" placeholder="" onblur="validate(4)"> 
+                                        </div>
+
+                                  </div>
+
+                                  <div class="row justify-content-between text-left">
+                                      <div class="form-group col-12 flex-column d-flex"> 
+                                          <label class="form-control-label px-3">Your request<span class="text-danger"> *</span></label> 
+                                          <textarea type="text" id="ans" name="request" class="form-control" placeholder="" onblur="validate(6)"></textarea> 
+                                      </div>
+                                  </div>
+                                
+                                      <div class="text-center"> <button type="submit" class="rounded-pill btn-dark" >Send</button> </div>
+                                  
+                              </form>
+                    
+                          </div>
+                    
+
+                        
+
+                      <div class="col-lg-4 mt-3">
+                        <div class="info-box mb-4">
+                          <i class="bx bx-map"></i>
+                          <h3>Our Address</h3>
+                          <p>00100 Nairobi</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mt-3">
+                        <div class="info-box  mb-4">
+                          <i class="bx bx-envelope"></i>
+                          <h3>Email Us</h3>
+                          <p>tunebox.ke@gmail.com</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mt-3">
+                        <div class="info-box  mb-4">
+                          <i class="bx bx-phone-call"></i>
+                          <h3>Call Us</h3>
+                          <p>+254710580320</p>
+                        </div>
+                      </div>
+
+                  </
+                  </div>
+              </div>
+      </div>
+  </section>
+    <!-- <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2> -->
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        <!-- </div>
+
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+             <img src="{% static 'assets/tunebox.PNG' %}" alt="" srcset="">   
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <br>
+        <div class="row"> -->
+
+          <!-- <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div> -->
+
+          <!-- <div class="col-lg-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" class="rounded-pill bg-dark text-white">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+   
+<br> -->
+
+        <!-- <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>00100 Nairobi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>tunebox.ke@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+254710580320</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Section -->
+
+    <script src="{% static 'assets/js/swiper.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/fslightbox.js' %}"></script>
+
+  </main><!-- End #main -->
+  {% include 'booth/chatbox.html' %}
+
+   {% include 'booth/footer.html' %}
+  <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}
